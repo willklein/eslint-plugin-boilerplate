@@ -1,7 +1,7 @@
-var example = require('./rules/example');
-
 module.exports = {
   rules: {
-    example: example
+    example: require('./lib/rules/example')
+
+    // add additional rules here
   }
 };

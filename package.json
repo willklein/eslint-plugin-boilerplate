@@ -4,21 +4,25 @@
   "description": "ESLint plugin boilerplate",
   "main": "index.js",
   "scripts": {
+    "major-release": "npm version major && npm publish && git push --follow-tags",
     "minor-release": "npm version minor && npm publish && git push --follow-tags",
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "test": "mocha tests/rules"
+    "test": "mocha tests/**/*.js"
   },
   "keywords": [
     "eslint",
+    "eslint-plugin",
     "eslintplugin"
   ],
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^0.22.1",
-    "eslint-tester": "^0.7.0",
-    "mocha": "^2.2.5"
+    "eslint": "3.8.1",
+    "mocha": "3.1.0"
   },
   "peerDependencies": {
-    "eslint": ">=0.8.0"
+    "eslint": "^2.0.0 || ^3.0.0"
+  },
+  "engines": {
+    "node": ">=0.10"
   }
 }
