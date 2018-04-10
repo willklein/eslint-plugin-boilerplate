@@ -1,4 +1,4 @@
-# eslint-plugin-boilerplate
+# eslint-plugin-boilerplate [![Build Status](https://travis-ci.org/paulvollmer/eslint-plugin-boilerplate.svg?branch=master)](https://travis-ci.org/paulvollmer/eslint-plugin-boilerplate)
 
 Basic example, compatible with ESLint 2.x and 3.x.
 
