@@ -1,8 +1,9 @@
-var rule = require('../../../lib/rules/example')
-var RuleTester = require('eslint').RuleTester;
+'use strict';
 
-var ruleTester = new RuleTester();
+const rule = require('../../../lib/rules/example')
+const RuleTester = require('eslint').RuleTester;
 
+const ruleTester = new RuleTester();
 ruleTester.run('example', rule, {
   valid: [
     'var validExample;',
@@ -13,7 +14,7 @@ ruleTester.run('example', rule, {
   invalid: [
     {
       code: 'while(condition) {}',
-      errors: [ { message: 'Do not use while loops.' } ]
+      errors: [ { messageId: 'avoidWhileLoops' } ]
     }
   ]
 });
